@@ -1,0 +1,59 @@
+.km-ios #main .km-content
+    {
+        background: transparent;
+    }
+
+    #main .km-content
+    {
+        text-align: center;
+    }
+
+
+
+
+    .km-material h1.loaderHeading,
+    .km-flat h1.loaderHeading,
+    .km-android h1.loaderHeading,
+    .km-wp h1.loaderHeading
+    {
+        display: block;
+    }
+
+    .km-ios h1.loaderHeading
+    {
+    	font-size: 1rem;
+    }
+    .km-meego h1.loaderHeading,
+    .km-blackberry h1.loaderHeading
+    {
+        font-size: 1.5rem;
+    }
+
+    .km-android-light h1.loaderHeading
+    {
+        color: #222;
+    }
+	h1 {
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+    #scrollview-home .photo {
+        display: inline-block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .photo1 {background-image: url("media/1.jpg");}
+    .photo2 {background-image: url("media/2.jpg");}
+    .photo3 {background-image: url("media/3.jpg");}
+    .photo4 {background-image: url("media/4.jpg");}
+
+	#touchSurface {
+        background: #161d2b;
+        padding: 5em 1em;
+		color: white;
+    }

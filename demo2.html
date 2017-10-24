@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1018/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1018/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1018/styles/kendo.mobile.all.min.css" />
+	<link rel="stylesheet" href="styles.css">
+
+    <script src="https://kendo.cdn.telerik.com/2017.3.1018/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.3.1018/js/kendo.all.min.js"></script>
+    <script src="script.js"></script>
+	<script src="media/console.js"></script>
+
+</head>
+<body>
+<div id="main" data-role="view" class="km-insetcontent" data-init="viewInit" data-hide="viewHide" data-title="Kendo UI demo" data-use-native-scrolling="true">
+
+	<div data-title="Touch Events">
+
+    	<div
+        	id="touchSurface"
+        	data-role="touch"
+        	data-enable-swipe="1"
+        	data-touchstart="myTouch.touchstart"
+        	data-swipe="myTouch.swipe"
+        	data-tap="myTouch.tap"
+        	data-doubletap="myTouch.doubletap"
+        	data-hold="myTouch.hold"
+        	>
+			This is an element
+		</div>
+		<div class="console"></div>
+		<a href="demo3.html" class="km-primary">Show me more!</a>
+	</div>
+</div>
+	
+
+
+
+<script>
+    var app = new kendo.mobile.Application(document.body, { skin: "nova" });
+</script>
+</body>
+</html>

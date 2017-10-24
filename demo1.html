@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+    <style>html { font-size: 14px; font-family: Arial, Helvetica, sans-serif; }</style>
+    <title></title>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1018/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1018/styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2017.3.1018/styles/kendo.mobile.all.min.css" />
+	<link rel="stylesheet" href="styles.css">
+
+    <script src="https://kendo.cdn.telerik.com/2017.3.1018/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2017.3.1018/js/kendo.all.min.js"></script>
+	<script src="script.js"></script>
+    
+
+</head>
+<body>
+<div data-role="view" id="navbar-home" data-title="Kendo UI Demo" data-use-native-scrolling="true" >
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title"></span>
+            <a data-align="right" data-icon="organize" data-role="button" href="#navbar-grouped">Group</a>
+            <a data-align="right" data-icon="source-code" data-click="goToSourceCode" data-role="button" title="Show this demo source code"></a>
+        </div>
+    </header>
+    <ul data-role="listview">
+        <li><img class="km-thumbnail" /> Pekka Peruskäyttäjä</li>
+        <li><img class="km-thumbnail" /> Äiti</li>
+        <li><img class="km-thumbnail" /> Anneli Auer</li>
+        <li><img class="km-thumbnail" /> Bill Gates</li>
+        <li><img class="km-thumbnail" /> Keke Ruusperi</li>
+        
+    </ul>
+	<a href="demo2.html" class="km-primary">Show me more!</a>
+</div>
+
+<div data-role="view" id="navbar-grouped" data-title="Contacts" data-use-native-scrolling="true">
+    <header data-role="header">
+        <div data-role="navbar">
+            <span data-role="view-title">Contacts</span>
+            <a data-align="right" data-icon="stop" data-role="button" href="#:back">Ungroup</a>
+        </div>
+    </header>
+    <ul data-role="listview" data-type="group">
+        <li>
+            A
+            <ul>
+                <li><img class="km-thumbnail" /> Anneli Auer</li>
+            </ul>
+        </li>
+        <li>
+            B
+            <ul>
+                <li><img class="km-thumbnail" /> Bill Gates</li>
+                
+            </ul>
+        </li>
+        <li>
+           K
+            <ul>
+                <li><img class="km-thumbnail" /> Keke Ruusperi</li>
+                
+            </ul>
+        </li>
+        <li>
+            P
+            <ul>
+                <li><img class="km-thumbnail" /> Pekka Peruskäyttäjä</li>
+                
+            </ul>
+        </li>
+        <li>
+            Ä
+            <ul>
+                <li><img class="km-thumbnail" /> Äiti</li>
+                
+            </ul>
+        </li>
+    </ul>
+	
+</div>
+
+
+<script>
+    var app = new kendo.mobile.Application(document.body, { skin: "nova" });
+</script>
+</body>
+</html>
