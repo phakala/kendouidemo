@@ -8,8 +8,32 @@
         text-align: center;
     }
 
+.km-navbar .km-widget.km-button {
+position: absolute;
+right: 15px;
+
+}
+.km-dialog-title, .km-view-title {
+text-align:left !important;
+margin-left:15px;
+}
+.km-header a.km-widget.km-button .km-text {
+	display:none;
+}
 
 
+
+.km-primary.km-widget.km-button,.km-header .km-text {
+	color:white !important;
+
+
+}
+.km-rightitem .km-text {
+color:black !important;
+}
+.km-nova .km-modalview .km-footer .km-rightitem .km-button {
+	position:relative;
+}
 
     .km-material h1.loaderHeading,
     .km-flat h1.loaderHeading,
